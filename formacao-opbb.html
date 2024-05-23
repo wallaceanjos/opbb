@@ -173,15 +173,33 @@
         }
 
         .theme-default-light a {
-            color: #003c4c !important;
+            color: #003c4c;
+        }
+
+        .theme-default-light .btn {
+            background: #003c4c;
+            color: #ffffff;
+        }
+
+        iframe {
+            aspect-ratio: 16/9;
+            border-bottom-style: none;
+            border-color: #000000;
+            border-left-style: none;
+            border-radius: 16px;
+            border-right-style: none;
+            border-top-style: none;
+            border-width: 0px;
+            width: 100%;
+            height: 100%;
         }
     </style>
 
     <section class="theme-default-dark">
         <div class="d-flex-column d-flex-center overflow-hidden position-relative"
-            style="width: 100%; max-height: 450px; aspect-ratio: 16/5;  background: url(https://wallaceanjos.github.io/opbb/assets/images/Banner_Seguro-de-vida_Topo--1200x375.png) no-repeat center center / cover;">
+            style="width: 100%; max-height: 450px; aspect-ratio: 16/5;  background: url(https://wallaceanjos.github.io/opbb/assets/images/Banner_previdencia_Topo-1200x375.png) no-repeat center center / cover;">
             <div class="my-container position-relative z-index-2 d-flex-center-center">
-                <h1>Seguro de Vida</h1>
+                <h1>Formação OPBB</h1>
             </div>
             <span class="background-bg-alpha position-absolute w-100-p h-100-p z-index-1"></span>
         </div>
@@ -195,61 +213,34 @@
 
     <section class="theme-default-light">
         <div class="d-flex-column background-surface">
-            <div class="my-container py-64 lh-32 my-fg-color">
-                <p>Após várias negociações e ajustes no orçamento, informamos que está vigente a <strong>nova apólice
-                    </strong>de seguros (acidentes pessoais) da OPBB.</p>
-                <p>O prêmio, que era de R$ 20 mil, passa a ser de <strong>R$ 50 mil.</strong></p>
-                <p>Além da <strong>morte por acidente </strong>(MA), o atual seguro cobre <strong>invalidez
-                        permanente total ou parcial por acidente</strong> (IPA), <strong>morte do cônjuge por
-                        acidente </strong>(MA) e <strong>serviço de assistência funeral familiar</strong> (SAF).</p>
-                <p>No caso da Assistência Funeral Familiar, estão cobertos cônjuges e filho(s), respeitado os termos da
-                    legislação
-                    de renda:</p>
-                <ul>
-                    <li>Filho(a) ou enteado(a) até 21 anos de idade ou, em qualquer idade, quando incapacitado física ou
-                        mentalmente
-                        para o trabalho.</li>
-                    <li>Filho(a) ou enteado(a), se ainda estiverem cursando estabelecimento de ensino superior ou escola
-                        técnica de
-                        segundo grau, até 24 anos de idade.</li>
-                </ul>
-                <p>Para visualizar as Condições Gerais do <strong>Seguro</strong>, <a
-                        href="https://docs.wixstatic.com/ugd/73e627_47ac5c70e1094ddfbf8df3cfe7619a8f.pdf"
-                        target="_blank" rel="noreferrer noopener">clique aqui</a>.</p>
-                <p>Para visualizar as Condições Gerais da <strong>Assistência Funeral</strong>, <a
-                        href="https://docs.wixstatic.com/ugd/73e627_371a6fbe1309428baf2ebd30f6b6d9e4.pdf"
-                        target="_blank" rel="noreferrer noopener">clique aqui</a>.</p>
-                <p>Para visualizar as Condições Gerais da <strong>Cobertura de Invalidez (total ou parcial) por
-                        acidente</strong>, <a
-                        href="https://docs.wixstatic.com/ugd/73e627_aa969659289f4e56aa95fa6b92af9739.pdf"
-                        target="_blank" rel="noreferrer noopener">clique aqui</a><a
-                        href="https://docs.wixstatic.com/ugd/73e627_aa969659289f4e56aa95fa6b92af9739.pdf"
-                        target="_blank" rel="noreferrer noopener">.</a></p>
-                <p><strong>ACIONANDO A SEGURADORA</strong></p>
-                <p>O Prêmio e/ou Serviço de Assistência Funeral poderá ser acionado por meio da Central de Atendimento
-                    da SulAmérica
-                    Seguros, através dos números <strong>4090 10 73 </strong>(capitais e regiões metropolitanas)
-                    e <strong>0800 778 1073 </strong>(demais localidades). Atendimento 24 horas!</p>
-                <p> </p>
-                <p><strong>ABERTURA DE SINISTRO E</strong> <strong>SOLICITAÇÃO DE REEMBOLSO (ASSISTÊNCIA
-                        FUNERAL)</strong></p>
-                <p><strong>4004 49 35 </strong>(capitais e regiões metropolitanas) e <strong>0800 726
-                        4935 </strong>(demais localidades)</p>
-                <p>Horário de Atendimento: 2ª a 6ª, das 08h00 às 18h30 (exceto feriados nacionais)</p>
-                <p>PARA ACESSAR A DOCUMENTAÇÃO NECESSÁRIA PARA SOLICITAÇÃO DO REEMBOLSO</p>
-                <p><strong><a
-                            href="https://2b818c5e-3025-402d-8c86-c527e80bcbf3.filesusr.com/ugd/73e627_f4b464cecb294436bf504c9ae90e8ffe.pdf"
-                            target="_blank" rel="noreferrer noopener">CLIQUE AQUI</a></strong></p>
-                <p>Durante o atendimento, será solicitado seus dados e os dados da OPBB (abaixo):</p>
-                <p><strong>Ordem dos Pastores Batistas do Brasil</strong></p>
-                <p>Rua José Higino, 416 – Prédio 30 – Tijuca – Rio de Janeiro / RJ – CEP: 20510-412</p>
-                <p>Tel.: (21) 3217-6676</p>
-                <p>E-mail: <a href="mailto:escritorio@opbb.org.br">escritorio&#64;opbb.org.br</a>
-                </p>
-                <p>CNPJ 06.026.551/0001-00</p>
-                <p>APÓLICE Nº 533136 // VIDA EM GRUPO Nº 666993</p>
+            <div class="my-container py-64 lh-32 my-fg-color d-flex-column gap-24">
+
+                <div class="d-flex-column gap-16">
+                    <h3 class="m-0">
+                        <b>Você e sua família podem contar com o Plano
+                            OPBBPrev!</b>
+                    </h3>
+                    <p class="m-0">O <b>Plano OPBBPrev</b> é um plano de previdência privada
+                        preparado para atender aos filiados da Ordem dos Pastores Batistas
+                        do Brasil, bem como aos seus cônjuges e dependentes econômicos. O
+                        plano é administrado pelo SEBRAE PREVIDÊNCIA.</p>
+                    <p class="m-0">O <b>Plano OPBBPrev</b> é um plano <b>Instituído</b>,
+                        estruturado na modalidade de Contribuição Definida. Nesse tipo de
+                        plano o participante realiza a contribuição e define o quanto pode
+                        contribuir todos os meses. O valor da renda programada depende do
+                        montante acumulado durante o tempo de participação no plano.</p>
+
+                    <div class="d-flex">
+
+                        <a class="px-32 py-16 fs-16 text-decoration-none btn border-radius-8"
+                            href="https://www.sebraeprevidencia.com.br/opbbprev" target="_blank">Clique aqui e sabia mais dos benefícios
+                        </a>
+                    </div>
+                </div>
 
             </div>
+
+        </div>
         </div>
     </section>
 

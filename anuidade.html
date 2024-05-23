@@ -1,224 +1,236 @@
 <html>
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>OPBB</title>
     <meta name="viewport"
-      content="width=device-width, height=device-height, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no" />
+        content="width=device-width, height=device-height, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/matcha-theme@latest/css/matcha-style.css" rel="stylesheet" crossorigin="anonymous" />
     <style>
-      body,html {
-        position: relative;
-        padding: 0;
-        margin: 0;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-      }
+        body,
+        html {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
 
-      div.container {
-        width: 100%;
-        margin: 0 auto;
-        position: relative !important;
-        top: 0;
-        left: 0;
-        min-height: auto;
-        width: 100%;
-        max-width: 100% !important;
-      }
+        div.container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative !important;
+            top: 0;
+            left: 0;
+            min-height: auto;
+            width: 100%;
+            max-width: 100% !important;
+        }
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      pre,
-      img,
-      ul,
-      ol,
-      blockquote {
-        box-sizing: border-box;
-      }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        pre,
+        img,
+        ul,
+        ol,
+        b,
+        strong,
+        blockquote {
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif !important;
+        }
 
-      pre {
-        display: inline-block;
-        width: 100%;
-        white-space: pre-wrap;
-        /* css-3 */
-        white-space: -moz-pre-wrap;
-        /* Mozilla, since 1999 */
-        white-space: -pre-wrap;
-        /* Opera 4-6 */
-        white-space: -o-pre-wrap;
-        /* Opera 7 */
-        word-wrap: break-word;
-      }
+        pre {
+            display: inline-block;
+            width: 100%;
+            white-space: pre-wrap;
+            /* css-3 */
+            white-space: -moz-pre-wrap;
+            /* Mozilla, since 1999 */
+            white-space: -pre-wrap;
+            /* Opera 4-6 */
+            white-space: -o-pre-wrap;
+            /* Opera 7 */
+            word-wrap: break-word;
+        }
 
-      ​ pre span {}
+        ​ pre span {}
 
-      ​ img {
-        max-width: 100% !important;
-        height: auto;
-      }
+        ​ img {
+            max-width: 100% !important;
+            height: auto;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!-- [INÍCIO] CONFIG - LARGURA DA TELA
     -- =============================================== -->
     <style>
-      .page.container.row {
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        max-width: 1920px;
-      }
+        .page.container.row {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 1920px;
+        }
 
-      .page.container.row .page-inner {
-        margin: 0;
-      }
+        .page.container.row .page-inner {
+            margin: 0;
+        }
 
-      .page-inner span.badge {
-        font-size: 0.75em;
-        line-height: 1em !important;
-      }
+        .page-inner span.badge {
+            font-size: 0.75em;
+            line-height: 1em !important;
+        }
 
-      .page-inner.h1,
-      .page-inner h1 {
-        font-size: 2em !important;
-        font-weight: bold;
-      }
+        .page-inner.h1,
+        .page-inner h1 {
+            font-size: 2em !important;
+            font-weight: bold;
+        }
 
-      .page-inner.h2,
-      .page-inner h2 {
-        font-size: 1.6em !important;
-      }
+        .page-inner.h2,
+        .page-inner h2 {
+            font-size: 1.6em !important;
+        }
 
-      .page-inner .h4,
-      .page-inner h4 {
-        font-size: 1.4em !important;
-        font-weight: bold;
-      }
+        .page-inner .h4,
+        .page-inner h4 {
+            font-size: 1.4em !important;
+            font-weight: bold;
+        }
 
-      .page-inner p {
-        line-height: 2em !important;
-        font-size: 1em !important;
-      }
+        .page-inner p {
+            line-height: 2em !important;
+            font-size: 1em !important;
+        }
     </style>
     <!-- =============================================== --
       -- [FINAL] CONFIG - LARGURA DA TELA -->
 
-      <!-- [INÍCIO] CONFIG - GLOBAL DE ESTILO
+    <!-- [INÍCIO] CONFIG - GLOBAL DE ESTILO
     -- =============================================== -->
-      <style>
+    <style>
         .my-container {
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          margin-right: auto;
-          margin-left: auto;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
         }
-        
+
         @media (min-width: 576px) {
             .my-container {
                 max-width: 540px;
             }
         }
-        
+
         @media (min-width: 768px) {
             .my-container {
                 max-width: 720px;
             }
         }
-        
+
         @media (min-width: 992px) {
             .my-container {
                 max-width: 960px;
             }
         }
-        
+
         @media (min-width: 1200px) {
-          .my-container {
-              max-width: 1140px;
-          }
+            .my-container {
+                max-width: 1140px;
+            }
         }
-        
-        .theme-default-light h1, 
-        .theme-default-light h2, 
-        .theme-default-light h3, 
-        .theme-default-light h4, 
-        .theme-default-light h5, 
-        .theme-default-light h6, 
-        .theme-default-light p, 
-        .theme-default-light pre, 
-        .theme-default-light img, 
-        .theme-default-light ul, 
-        .theme-default-light ol, 
-        .theme-default-light blockquote 
-        {
-          color: #a68200 !important;
+
+        .theme-default-light h1,
+        .theme-default-light h2,
+        .theme-default-light h3,
+        .theme-default-light h4,
+        .theme-default-light h5,
+        .theme-default-light h6,
+        .theme-default-light p,
+        .theme-default-light pre,
+        .theme-default-light img,
+        .theme-default-light ul,
+        .theme-default-light ol,
+        .theme-default-light b,
+        .theme-default-light strong,
+        .theme-default-light blockquote {
+            color: #a68200;
         }
+
         .theme-default-light a {
-          color: #003c4c !important;
-        } 
-        
-      </style>
-      
-      <section class="theme-default-dark">
+            color: #003c4c !important;
+        }
+    </style>
+
+    <section class="theme-default-dark">
         <div class="d-flex-column d-flex-center overflow-hidden position-relative"
-          style="min-height: 450px; background: url(https://web.archive.org/web/20230927113458im_/https://opbb.org.br/wp-content/uploads/sites/4/2022/06/Banner_Anuidade_Topo-1200x375.png) no-repeat center center / cover;">
-          <div class="my-container position-relative z-index-2 d-flex-center-center"><h1>Anuidade</h1></div>
-          <span class="background-bg-alpha position-absolute w-100-p h-100-p z-index-1"></span>
+            style="width: 100%; max-height: 450px; aspect-ratio: 16/5;  background: url(https://wallaceanjos.github.io/opbb/assets/images/Banner_Anuidade_Topo-1200x375.png) no-repeat center center / cover;">
+            <div class="my-container position-relative z-index-2 d-flex-center-center">
+                <h1>Anuidade</h1>
+            </div>
+            <span class="background-bg-alpha position-absolute w-100-p h-100-p z-index-1"></span>
         </div>
-      </section>
+    </section>
 
-      <!-- [INÍCIO] SECTION - ANUIDADE
+    <!-- [INÍCIO] SECTION - ANUIDADE
         -- =============================================== -->
-      <style>
-        
-      </style>
-      
-      <section class="theme-default-light">
-        <div class="d-flex-column background-surface">
-          <div class="my-container py-64 lh-32 my-fg-color">
-            <p>As anuidades são a <strong>única fonte de receita</strong> para manutenção de toda estrutura organizacional
-              da Ordem dos Pastores Batistas do Brasil (em nível Estadual e Nacional). Além disso, com o valor da anuidade,
-              a OPBB ainda provê assistência, produtos e serviços para seus filiados.<u></u></p>
-            <p><strong>Como faço para pagar minha anuidade?</strong></p>
-            <ol>
-              <li>Para consultar suas anuidades,&nbsp;<a href="https://www.atos6.com/users/sign_in" target="_blank"
-                  rel="noopener noreferrer">clique aqui</a>&nbsp;e faça seu login no Atos6.</li>
-              <li>
-                <div>
-                  <div>
-                    <p class="TextWrapper-sc-__sc-1f8vz90-0 ldA-DAO" data-qa="block-description">Em seguida,&nbsp;<a
-                        href="https://www.atos6.com/organizations/47/recovery_orders" target="_blank"
-                        rel="noopener noreferrer">clique aqui</a> para acessar seu extrato.</p>
-                  </div>
-                </div>
-              </li>
-            </ol>
-            <hr>
-            <p>
-              Dúvidas, <a href="https://youtu.be/0a6lWHpx_qohttps://youtu.be/QHo5nn1JyKE">clique aqui</a> e assista nosso
-              tutorial</p>
-  
-          </div>
-        </div>
-      </section>
+    <style>
 
-      <!-- =============================================== --
+    </style>
+
+    <section class="theme-default-light">
+        <div class="d-flex-column background-surface">
+            <div class="my-container py-64 lh-32 my-fg-color">
+                <p>As anuidades são a <strong>única fonte de receita</strong> para manutenção de toda estrutura
+                    organizacional
+                    da Ordem dos Pastores Batistas do Brasil (em nível Estadual e Nacional). Além disso, com o valor da
+                    anuidade,
+                    a OPBB ainda provê assistência, produtos e serviços para seus filiados.<u></u></p>
+                <p><strong>Como faço para pagar minha anuidade?</strong></p>
+                <ol>
+                    <li>Para consultar suas anuidades,&nbsp;<a href="https://www.atos6.com/users/sign_in"
+                            target="_blank" rel="noopener noreferrer">clique aqui</a>&nbsp;e faça seu login no Atos6.
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <p class="TextWrapper-sc-__sc-1f8vz90-0 ldA-DAO" data-qa="block-description">Em
+                                    seguida,&nbsp;<a href="https://www.atos6.com/organizations/47/recovery_orders"
+                                        target="_blank" rel="noopener noreferrer">clique aqui</a> para acessar seu
+                                    extrato.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <hr>
+                <p>
+                    Dúvidas, <a href="https://youtu.be/0a6lWHpx_qohttps://youtu.be/QHo5nn1JyKE">clique aqui</a> e
+                    assista nosso
+                    tutorial</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================== --
     -- [FINAL] SECTION - ANUIDADE -->
 
 
-  </body>
+</body>
 
 </html>
